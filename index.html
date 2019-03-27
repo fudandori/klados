@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Klados</title>
+    <meta name="description" content="Klados branch labeler">
+    <meta name="author" content="Fudandori">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div id="view-container">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 row">
+                    <span class="col-4 text-right">ACC</span>
+                    <input class="col-4 col-sm-4 col-md-3 col-lg-2" type="text" id="acc-input">
+
+                    <div class="w-100"></div>
+
+                    <span class="col-4 text-right">Text</span>
+                    <input class="col-8" type="text" id="text-input">
+
+                    <div class="w-100"></div>
+
+                    <span class="col-4 text-right">Branch</span>
+                    <input class="col-8" type="text" id="branch-input">
+
+                    <div class="w-100"></div>
+
+                    <div id="generateButton" onclick="generateBranch()">GENERATE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
