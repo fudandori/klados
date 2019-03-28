@@ -9,9 +9,10 @@ function generateBranch() {
     } else if (isNaN(acc)) {
         alert("ACC is not a valid number");
     } else {
-        
 
-        text = text.replace(/á|ä|à|â/g, "a")
+
+        text = text
+            .replace(/á|ä|à|â/g, "a")
             .replace(/é|ë|è|ê/g, "e")
             .replace(/í|ì|î|ï/g, "i")
             .replace(/ó|ò|ô|ö/g, "o")
@@ -31,4 +32,14 @@ function generateBranch() {
 
         document.getElementById('branch-input').value = "ACC-" + acc + "_" + text;
     }
+}
+
+function generateCommit() {
+    let text = String(document.getElementById("branch-commit-input").value);
+
+    text = text
+        .replace(/_/, " - ")
+        .replace(/_/g, " ");
+
+    document.getElementById("commit-input").value = text;
 }

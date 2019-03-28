@@ -9,7 +9,11 @@
     <meta name="description" content="Klados branch labeler">
     <meta name="author" content="Fudandori">
 
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts - Geostar Fill -->
+    <link href="https://fonts.googleapis.com/css?family=Geostar+Fill" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -22,6 +26,8 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- JS Scripts-->
     <script src="scripts.js"></script>
 </head>
 
@@ -29,24 +35,47 @@
     <div id="view-container">
 
         <div class="container">
-            <div class="row">
-                <div class="col-6 row">
-                    <span class="col-4 text-right">ACC</span>
-                    <input class="col-4 col-sm-4 col-md-3 col-lg-2" type="text" id="acc-input">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-8 col-lg-6 row justify-content-center">
+                    <div class="row frame col-12">
+                        <h4>BRANCH</h4>
+                        <div class="w-100"></div>
 
-                    <div class="w-100"></div>
+                        <span class="col-4 text-right">ACC</span>
+                        <input class="col-4" type="text" id="acc-input">
 
-                    <span class="col-4 text-right">Text</span>
-                    <input class="col-8" type="text" id="text-input">
+                        <div class="w-100"></div>
 
-                    <div class="w-100"></div>
+                        <span class="col-4 text-right">Text</span>
+                        <input class="col-8" type="text" id="text-input">
 
-                    <span class="col-4 text-right">Branch</span>
-                    <input class="col-8" type="text" id="branch-input">
+                        <div class="w-100"></div>
 
-                    <div class="w-100"></div>
+                        <span class="col-4 text-right">Branch</span>
+                        <input class="col-8" type="text" id="branch-input">
 
-                    <div id="generateButton" onclick="generateBranch()">GENERATE</div>
+                        <div class="w-100"></div>
+
+                        <div id="generateButton" onclick="generateBranch()">GENERATE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-8 col-lg-6 row justify-content-center">
+                    <div class="row frame col-12">
+                        <h4>COMMIT</h4>
+                        <div class="w-100"></div>
+
+                        <span class="col-4 text-right">Branch</span>
+                        <input class="col-8" type="text" id="branch-commit-input">
+
+                        <div class="w-100"></div>
+
+                        <span class="col-4 text-right">Commit</span>
+                        <input class="col-8" type="text" id="commit-input">
+
+                        <div id="generateButton" onclick="generateCommit()">GENERATE</div>
+                    </div>
                 </div>
             </div>
         </div>

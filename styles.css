@@ -32,6 +32,7 @@ html, body, #view-container {
 input {
     width: 100%;
     margin-top: 1px;
+    height: 30px;
 }
 
 input:focus {
@@ -47,4 +48,17 @@ input:focus {
         background-color: white;
         color: black
     }
+}
+
+.frame {
+    border: 3px solid gold;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+h4 {
+    font-family: 'Geostar Fill', cursive;
+    color: gold;
+    margin: auto;
 }
