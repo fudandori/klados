@@ -37,9 +37,20 @@ function generateBranch() {
 function generateCommit() {
     let text = String(document.getElementById("branch-commit-input").value);
 
-    text = text
-        .replace(/_/, " - ")
-        .replace(/_/g, " ");
+    if (text.length === 0) {
+        alert("Branch must be filled in");
+    } else {
+        text = text
+            .replace(/_/, " - ")
+            .replace(/_/g, " ");
 
-    document.getElementById("commit-input").value = text;
+        document.getElementById("commit-input").value = text;
+    }
+}
+
+function clipboard(id) {
+    const input = document.getElementById(id);
+    input.select();
+    document.execCommand("copy");
+    input.blur();
 }

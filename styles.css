@@ -7,25 +7,26 @@ html, body, #view-container {
     color: #FCF6BA;
 }
 
-#generateButton {
+.button {
     height: 30px;
     width: 200px;
     border: 2px solid gold;
     border-radius: 5px;
-    background-color: #133c7c;
     text-align: center;
     cursor: pointer;
+    background-color: #133c7c;
     color: gold;
     margin: 20px auto 0;
 }
 
-#generateButton:hover {
+.button:hover {
     animation: button 200ms ease-in;
-    background-color: white;
-    color: black;
+    color: #133c7c;
+    background-color: gold;
+    border-color: #133c7c;
 }
 
-#generateButton:active {
+.button:active {
     transform: translate(1px, 1px);
 }
 
